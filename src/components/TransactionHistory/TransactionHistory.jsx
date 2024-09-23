@@ -13,12 +13,12 @@ export default function FriendList({items}) {
       
         <tbody>
         {items.map(({ id, type, amount, currency }) => (
-                    <tr key={id}>
-                        <td>{type}</td>
-                        <td>{amount}</td>
-                        <td>{currency}</td>
-                    </tr>
-                ))}
+          <tr key={id}>
+              <td>{type}</td>
+              <td>{amount}</td>
+              <td>{currency}</td>
+          </tr>
+        ))}
         </tbody>
       </table>
     );
